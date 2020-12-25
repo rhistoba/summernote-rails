@@ -1,5 +1,10 @@
 p#notice = notice
 
+dl
+  dt title
+  dd = @document.title
+  dt content
+  dd.text-break = @document.content
 
 => link_to 'Edit', edit_document_path(@document)
 '|
