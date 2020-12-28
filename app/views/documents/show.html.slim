@@ -4,7 +4,9 @@ dl
   dt title
   dd = @document.title
   dt content
-  dd.text-break = @document.content
+  dd.text-break
+    .border.rounded.p-3
+      == @document.content
 
 => link_to 'Edit', edit_document_path(@document)
 '|
